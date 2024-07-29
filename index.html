@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form id="form">
+        <div class="name">
+          <div class="box">
+            <p>First Name</p>
+            <input id="username" type="text" />
+            <div class="error"></div>
+          </div>
+          <div class="box">
+            <p>Last Name</p>
+            <input id="usernameTwo" type="text" />
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <div class="email">
+          <p>Email Address</p>
+          <input id="email" type="email" />
+          <div class="error"></div>
+        </div>
+
+        <div class="query">
+          <p>Query Type</p>
+          <div class="queryboxes">
+            <label class="box">
+              <input id="radioOne" type="radio" name="query" />
+              <h2>General Enquiry</h2>
+            </label>
+            <div class="error"></div>
+
+            <label class="box">
+              <input id="radioTow" type="radio" name="query" />
+              <h2>Support Request</h2>
+            </label>
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <div class="message">
+          <p>Message</p>
+          <textarea type="text" id="textarea"></textarea>
+          <div class="error"></div>
+        </div>
+
+        <label class="checkbox">
+          <input id="checkbox" type="checkbox" />
+          <p>I consent to being contacted by the team</p>
+        </label>
+        <div class="error"></div>
+
+        <div class="submit">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
